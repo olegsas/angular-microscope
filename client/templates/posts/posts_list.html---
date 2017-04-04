@@ -1,0 +1,11 @@
+<template name="postsList">
+  <div class="posts page">
+    <ul>
+      <li ng-repeat = "data in $ctrl.postsData">1</li>
+    </ul>
+    
+    <!--{{#each posts}}
+      {{> postItem}}
+    {{/each}}-->
+  </div>
+</template>
