@@ -1,7 +1,19 @@
   <div class="posts page">
-    <p>tesst</p>
+    <div class="post" ng-repeat = "data in $ctrl.postsData">
+      <div class="post-content">
+        <h3>
+          <a href = "{{data.url}}">{{data.title}}</a>
+          <span>{{domain}}</span>
+        </h3>
+      </div>
+    </div>
+    
+    
+    
     <ul>
-      <li ng-repeat = "data in $ctrl.postsData">{{data}}</li>
+      <li ng-repeat = "data in $ctrl.postsData">
+        {{data}}
+      </li>
     </ul>
     
     <!--{{#each posts}}
